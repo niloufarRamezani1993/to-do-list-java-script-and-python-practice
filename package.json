@@ -1,0 +1,16 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "practice python and js",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx tailwindcss -i ./input.css -o ./output.css --watch"
+  },
+  "author": "Niloufar Ramezani",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16"
+  }
+}
