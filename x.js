@@ -29,18 +29,26 @@ let getLiList = function (i) {
     let deleteBtn =document.createElement("button");
     deleteBtn.textContent ="delete"
     deleteBtn = btns(deleteBtn)
-
-
+    
+    
     // جایگاه دکمه ها
     let btnsContainer = document.createElement("div")
     btnsContainer.appendChild(tickBtn)
     btnsContainer.appendChild(deleteBtn)
     btnsContainer.classList.add("flex","items-center", "justify-end", "space-x-2")
-
+    
     li.appendChild(textContainer)
     li.appendChild(btnsContainer)
-
+    
     list.appendChild(li)
+   
+    tickBtn.addEventListener("click" , ()=>{
+        textContainer.classList.toggle("line-through")
+        tickBtn.style.display = "none";
+    })
+    deleteBtn.addEventListener("click" , ()=>{
+        list.removeChild(li);
+    })
 }
 
 
